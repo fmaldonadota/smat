@@ -18,7 +18,7 @@ body {
 }
 
 #page-wrapper {
-    padding: 58% 0px;
+    padding: 20% 0px;
     min-height: 0px;
     background: #ececec;
 }
@@ -567,13 +567,13 @@ line-height: 1.428571429;
 } 
  #page-wrapper {
 position: relative;
-top: 60px;
+top: 100%;
  }
  }
  @media(max-width:480px) {
  #page-wrapper {
 position: relative;
-top: 60px;
+top: 100%px;
  }
 .page-header small {
 display: block;

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8" />
@@ -45,10 +45,10 @@
                         <a href="index.html"><i class="fa fa-dashboard"></i>Inicio</a>
                     </li>
                     <li>
-                        <a href="mantPreventivo.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>Mantenimiento Preventivo</a>
+                        <a href="mantPreventivo.php" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>Mantenimiento Preventivo</a>
                     </li>
                     <li>
-                        <a href="montParametros.html" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>Monitoreo de Parametros</a>
+                        <a href="montParametros.php" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>Monitoreo de Parametros</a>
                     </li>
                 </ul>
 
@@ -60,6 +60,7 @@
 		<div id="page-wrapper">
 		  <div class="header">
                         <h1 class="page-header">
+                            </br></br></br></br>
                             <center>
                             <img src="assets/img/ESPEtransparente.png" width="315" height="90">
                             </center>
@@ -74,7 +75,9 @@
 						<div class="card-content">
                             <center>
                             <img src="assets/img/sigfox.png" width="110" height="50">
+                                &nbsp;&nbsp;
                             <img src="assets/img/logo.png" width="110" height="50">
+                                &nbsp;&nbsp;
                             <img src="assets/img/meca.jpeg" width="50" height="50">
                             </center>
 						</div>
@@ -114,8 +117,9 @@
                         </div>
 						<div class="card-action">
                             <center>
-                            <button class="btn btn-default" onclick="location.href='mantPreventivo.html';">Mant Preventivo</button>
-                            <button class="btn btn-default" onclick="location.href='montParametros.html';">Monitoreo Parametros</button>
+                            <button class="btn btn-default" onclick="location.href='mantPreventivo.php';">Mantenimiento Preventivo</button>
+                                </br>  </br>
+                            <button class="btn btn-default" onclick="location.href='montParametros.php';">Monitoreo de Parametros</button>
                             </center>
 						</div>
 						</div>
@@ -129,7 +133,7 @@
   </div>
 
 <center>
-
+    </br></br></br></br>
 				<footer><p>Todos los derechos reservados: <a href="https://algoritmia-seap.com/">algoritmia-seap.com</a></p>
 
 
@@ -147,18 +151,21 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Ingreso de Datos</h5>
                 </div>
+                <form action="api/postUser.php" method="post">
                 <div class="modal-body">
-                    <input placeholder="Nombre del propietario" id="nompropietario" type="text" class="validate">
-                    <input placeholder="Marca" id="marca" type="text" class="validate">
-                    <input placeholder="Año" id="ano" type="number" class="validate">
-                    <input placeholder="Placa" id="placa" type="text" class="validate">
-                    <input placeholder="Correo" id="correo" type="email" class="validate">
-                    <input placeholder="Kilometraje" id="kil" type="number" class="validate">
+                    <input placeholder="Nombre del propietario" id="nompropietario" name="nompropietario" type="text" class="validate">
+                    <input placeholder="Marca" id="marca" name="marca" type="text" class="validate">
+                    <input placeholder="Año" id="ano" name="ano" type="number" class="validate">
+                    <input placeholder="Placa" id="placa" name="placa" type="text" class="validate">
+                    <input placeholder="Correo" id="correo" name="correo" type="email" class="validate">
+                    <input placeholder="Kilometraje" id="kil" name="kil" type="number" class="validate">
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>

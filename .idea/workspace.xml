@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4784abc-14dd-4043-b8ec-f7e16abf158a" name="Changes" comment="" />
+    <list default="true" id="f4784abc-14dd-4043-b8ec-f7e16abf158a" name="Changes" comment="inicio">
+      <change afterPath="$PROJECT_DIR$/api/algoritmo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/conexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/postUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/postUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/materialize/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/materialize/css/materialize.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantPreventivo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mantPreventivo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/montParametros.html" beforeDir="false" afterPath="$PROJECT_DIR$/montParametros.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +21,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="frmaldonado &lt;fabricioq-waco@hotmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -27,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/smat",
+    "last_opened_file_path": "C:/xampp/htdocs/ventas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,8 +70,32 @@
       <option name="presentableId" value="Default" />
       <updated>1671124021926</updated>
       <workItem from="1671124023848" duration="2981000" />
-      <workItem from="1671541260194" duration="18985000" />
+      <workItem from="1671541260194" duration="22490000" />
+      <workItem from="1671631167316" duration="10000" />
+      <workItem from="1671631886303" duration="15037000" />
     </task>
+    <task id="LOCAL-00001" summary="inicio">
+      <created>1671564880105</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671564880105</updated>
+    </task>
+    <task id="LOCAL-00002" summary="inicio">
+      <created>1671564891665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671564891665</updated>
+    </task>
+    <task id="LOCAL-00003" summary="inicio">
+      <created>1671564913920</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671564913920</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,5 +111,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="inicio" />
   </component>
 </project>

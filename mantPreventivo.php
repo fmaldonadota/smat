@@ -1,4 +1,62 @@
 ﻿<!DOCTYPE html>
+<?php
+
+include("api/conexion.php");
+$db = getDB();
+
+$res=$db->query("SELECT * FROM usuario ORDER by ID_USUARIO DESC LIMIT 1; ");
+
+while ($row = $res->fetch(PDO::FETCH_ASSOC) ) {
+    $idusuario=$row['ID_USUARIO'];
+    $nombres_apellidos=$row['NOM_USUARIO'];
+    $marca=$row['MARCA_USUARIO'];
+    $ano=$row['ANO_USUARIO'];
+    $placa=$row['PLACA_USUARIO'];
+    $correo=$row['CORREO_USUARIO'];
+    $killometros=$row['KIL_USUARIO'];
+}
+
+$killometros2=$killometros;
+$valoraceite=5000;
+
+$v=0;
+$w=0;
+$y=0;
+$z=0;
+
+$color="";
+
+for($x=0;$x<=$killometros2;$x=$x+$valoraceite){
+
+    $v=$x;
+  //  echo "inicio=",$v;
+
+    $y= $x+3500;
+  //  echo " medio1=",$y;
+
+    $z= $x+4500;
+   // echo " medio2=",$z;
+
+    $w= $x+5000;
+   // echo "fin=",$w;
+
+  //  echo "</br>";
+
+}
+
+if($killometros2>=$v && $killometros2<$y){
+    $color='#00FF04';
+}
+if($killometros2>=$y && $killometros2<$z){
+    $color="#F39C12";
+}
+if($killometros2>=$z && $killometros2<=$w){
+    $color='#FC0000';
+}
+
+
+
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -49,7 +107,7 @@
                         <a href="mantPreventivo.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>Mantenimiento Preventivo</a>
                     </li>
                     <li>
-                        <a href="montParametros.html" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>Monitoreo de Parametros</a>
+                        <a href="montParametros.php" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>Monitoreo de Parametros</a>
                     </li>
                 </ul>
 
@@ -69,7 +127,17 @@
 
 						<div class="card-stacked">
 						<div class="card-content">
-                            <center><h3>Datos Ingresados</h3></center>
+                            <center><h3><strong>Descripción del Automovil</strong></h3></center>
+                            <br>
+                            Nombre del Propietario : <strong> <?php echo $nombres_apellidos ?></strong>
+                            <br>Marca : <strong> <?php echo $marca ?></strong>
+                            <br> Año: <strong> <?php echo $ano ?></strong>
+                            <br>Placa : <strong> <?php echo $placa ?></strong>
+                            <br>Correo : <strong> <?php echo $correo ?></strong>
+                            <br>Kilometraje : <strong> <?php echo $killometros ?>   </strong>
+                            <br><br><center><button class="btn btn-success">Actualizar Kilometraje</button></center>
+
+
 						</div>
                                 <div class="card-content">
                                     <div class="table-responsive">
@@ -84,55 +152,55 @@
                                             <tbody>
                                             <tr>
                                                 <td>Aceite y Filtro</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="<?php echo $color ?>" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Kit de Bomba de Distribución</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Revision de Niveles</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Verificacion de fugas</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Filtro de Aire</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Bujias</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Aceite de Motor</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Liquido de Frenos</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr> <tr>
                                                 <td>Liquido Refrigerante</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr> <tr>
                                                 <td>ABC Motor</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>ABC Frenos</td>
-                                                <td><button class="btn btn-success"></button></td>
+                                                <td><input type="color" value="#ff0000" disabled></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
 
@@ -150,7 +218,7 @@
 
 
 <center>
-
+    </br></br></br></br>
 				<footer><p>Todos los derechos reservados: <a href="https://algoritmia-seap.com/">algoritmia-seap.com</a></p>
 
 

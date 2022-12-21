@@ -1,4 +1,24 @@
 ﻿<!DOCTYPE html>
+<?php
+
+include("api/conexion.php");
+$db = getDB();
+
+$res=$db->query("SELECT * FROM usuario ORDER by ID_USUARIO DESC LIMIT 1; ");
+
+while ($row = $res->fetch(PDO::FETCH_ASSOC) ) {
+    $idusuario=$row['ID_USUARIO'];
+    $nombres_apellidos=$row['NOM_USUARIO'];
+    $marca=$row['MARCA_USUARIO'];
+    $ano=$row['ANO_USUARIO'];
+    $placa=$row['PLACA_USUARIO'];
+    $correo=$row['CORREO_USUARIO'];
+    $killometros=$row['KIL_USUARIO'];
+
+}
+
+
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -46,7 +66,7 @@
                         <a href="index.html"><i class="fa fa-dashboard"></i>Inicio</a>
                     </li>
                     <li>
-                        <a href="mantPreventivo.html" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>Mantenimiento Preventivo</a>
+                        <a href="mantPreventivo.php" class="waves-effect waves-dark"><i class="fa fa-desktop"></i>Mantenimiento Preventivo</a>
                     </li>
 					<li>
                         <a href="montParametros.html" class="waves-effect waves-dark"><i class="fa fa-bar-chart-o"></i>Monitoreo de Parametros</a>
@@ -69,7 +89,14 @@
 
 						<div class="card-stacked">
 						<div class="card-content">
-                            <center><h3>Datos Ingresados</h3></center>
+                            <center><h3><strong>Descripción del Automovil</strong></h3></center>
+                            <br>
+                            Nombre del Propietario : <strong> <?php echo $nombres_apellidos ?></strong>
+                            <br>Marca : <strong> <?php echo $marca ?></strong>
+                            <br> Año: <strong> <?php echo $ano ?></strong>
+                            <br>Placa : <strong> <?php echo $placa ?></strong>
+                            <br>Correo : <strong> <?php echo $correo ?></strong>
+                            <br>Kilometraje : <strong> <?php echo $killometros ?></strong>
 						</div>
                                 <div class="card-content">
                                     <div class="table-responsive">
@@ -77,6 +104,7 @@
                                             <thead>
                                             <tr>
                                                 <th>Monitoreo</th>
+                                                <th>Valor</th>
                                                 <th>Alerta</th>
                                                 <th>Resert</th>
                                             </tr>
@@ -84,31 +112,37 @@
                                             <tbody>
                                             <tr>
                                                 <td>RPM</td>
+                                                <td>24</td>
                                                 <td><button class="btn btn-success"></button></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>Velocidad</td>
+                                                <td>24</td>
                                                 <td><button class="btn btn-success"></button></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>IAT</td>
+                                                <td>24</td>
                                                 <td><button class="btn btn-success"></button></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>TPS</td>
+                                                <td>24</td>
                                                 <td><button class="btn btn-success"></button></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>ECT</td>
+                                                <td>24</td>
                                                 <td><button class="btn btn-success"></button></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
                                             <tr>
                                                 <td>MAP</td>
+                                                <td>24</td>
                                                 <td><button class="btn btn-success"></button></td>
                                                 <td><button class="btn btn-danger">X</button></td>
                                             </tr>
@@ -126,7 +160,7 @@
 
 
 <center>
-
+    </br></br></br></br>   </br></br></br></br>   </br></br></br>
 				<footer><p>Todos los derechos reservados: <a href="https://algoritmia-seap.com/">algoritmia-seap.com</a></p>
 
 
