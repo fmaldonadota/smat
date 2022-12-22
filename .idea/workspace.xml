@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4784abc-14dd-4043-b8ec-f7e16abf158a" name="Changes" comment="inicio">
-      <change afterPath="$PROJECT_DIR$/api/algoritmo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/conexion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/postUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/postUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/materialize/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/materialize/css/materialize.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantPreventivo.html" beforeDir="false" afterPath="$PROJECT_DIR$/mantPreventivo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/montParametros.html" beforeDir="false" afterPath="$PROJECT_DIR$/montParametros.php" afterDir="false" />
-    </list>
+    <list default="true" id="f4784abc-14dd-4043-b8ec-f7e16abf158a" name="Changes" comment="Cambios V2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +16,7 @@
         <option value="frmaldonado &lt;fabricioq-waco@hotmail.com&gt;" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -37,20 +28,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/ventas",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "C:\\xampp\\htdocs\\smat\\node_modules\\stylelint",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/ventas&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;C:\\xampp\\htdocs\\smat\\node_modules\\stylelint&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\smat" />
@@ -95,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671564913920</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambios V2">
+      <created>1671655832749</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671655832749</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicio" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicio" />
+    <MESSAGE value="Cambios V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios V2" />
   </component>
 </project>
