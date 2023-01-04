@@ -1,11 +1,7 @@
 <?php
 
 $killometros=115600;
-
 $valoraceite=5000;
-$valor1=$killometros/5000;
-$valor2=is_int($valor1);
-$color1='';
 
 $v=0;
 $w=0;
