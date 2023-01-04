@@ -10,7 +10,7 @@ $placa = $_POST['placa'];
 $correo = $_POST['correo'];
 $kil = $_POST['kil'];
 
-$res=$db->query("INSERT INTO usuario
+$res=$db->query("INSERT INTO USUARIO
 VALUES ('','$nompropietario','$marca','$ano','$placa','$correo','$kil')");
 
 echo '<script>alert(" Se ingresaron los datos Correctamente")</script>';
